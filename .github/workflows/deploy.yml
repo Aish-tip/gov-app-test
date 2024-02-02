@@ -33,6 +33,9 @@ jobs:
     needs: build
 
     steps:
+    - name: Install Ionic CLI
+      run: npm install -g @ionic/cli
+      
     - name: Deploy to hosting service 
       run: ionic serve
         
